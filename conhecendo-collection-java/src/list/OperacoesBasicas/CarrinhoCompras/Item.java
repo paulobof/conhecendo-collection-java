@@ -2,9 +2,9 @@ package list.OperacoesBasicas.CarrinhoCompras;
 
 public class Item {
     //atributo
-    String nome;
-    double preco;
-    int quantidade;
+    private String nome;
+    private double preco;
+    private int quantidade;
 
     public Item(String nome, double preco, int quantidade) {
         this.nome = nome;
