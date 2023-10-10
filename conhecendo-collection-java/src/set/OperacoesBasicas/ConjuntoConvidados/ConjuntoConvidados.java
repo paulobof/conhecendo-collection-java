@@ -12,11 +12,7 @@ public class ConjuntoConvidados {
     }
 
     public void adicionarConvidado(String nome, int codigoConvite) {
-        //if (!convidadoSet.isEmpty()) {
-            convidadoSet.add(new Convidado(nome, codigoConvite));
-        //} else {
-        //    throw new RuntimeException("O Set está vazio");
-        //}
+        convidadoSet.add(new Convidado(nome, codigoConvite));
     }
     public void removerConvidadoPorCodigoConvite(int codigoConvite) {
         if (!convidadoSet.isEmpty()) {
@@ -30,22 +26,22 @@ public class ConjuntoConvidados {
             convidadoSet.remove(convidadoParaRemover);
 
         } else {
-            throw new RuntimeException("O Set está vazio");
+            System.out.println("O Set está vazio");
         }
     }
     public int contarConvidados(){
-        //if (!convidadoSet.isEmpty()) {
+        if (!convidadoSet.isEmpty()) {
             return convidadoSet.size();
-        //} else {
-        //    throw new RuntimeException("O Set está vazio");
-        //}
+        } else {
+            return 0;
+        }
     }
     public void exibirConvidados(){
-        //if (!convidadoSet.isEmpty()) {
+        if (!convidadoSet.isEmpty()) {
             System.out.println(convidadoSet);
-        //} else {
-        //    throw new RuntimeException("O Set está vazio");
-        //}
+        } else {
+            System.out.println("O Set está vazio");
+        }
     }
 
     public static void main(String[] args) {
